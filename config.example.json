@@ -1,0 +1,63 @@
+{
+
+  "general": {
+    "interval": 60,
+    "self_test_timeout": 60,
+    "block_orphan_depth": 10,
+    "block_mature_depth": 60,
+    "pidfile": "payoutd.pid"
+  },
+
+  "coin": {
+    "address_prefixes": [18, 19, 42]
+  },
+
+  "postgres": {
+    "db_hostname": "127.0.0.1",
+    "db_port": "5432",
+    "db_name": "",
+    "db_username": "",
+    "db_password": ""
+  },
+
+  "daemon": {
+    "hostname": "127.0.0.1",
+    "port": 18081
+  },
+
+  "wallet": {
+    "hostname": "127.0.0.1",
+    "port": 18090,
+    "rpc_auth_method": "config",
+    "rpc_auth_file": "/path/to/rpc-pass",
+    "rpc_username": "username",
+    "rpc_password": "password"
+  },
+
+  "payments": {
+    "priority": 1,
+    "max_recipients": 15,
+    "ring_size": 11,
+    "fee_adjustment_factor": 2,
+    "network_block_interval": 20,
+    "warning_threshold": 100000000000,
+    "max_payment_amount": 50000000000000
+  },
+
+  "fee": {
+    "percent": 3.5,
+    "split": [{
+      "name": "dev",
+      "uid": 1,
+      "percent": 100
+    }]
+  },
+
+  "logging": {
+    "path": "logs",
+    "payoutd": "both",
+    "daemon": "file",
+    "wallet": "file"
+  }
+
+}

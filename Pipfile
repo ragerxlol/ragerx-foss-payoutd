@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+
+[packages]
+colorama = "*"
+requests = "*"
+psycopg2 = "==2.7.7"
+psycopg2-binary = "==2.7.7"
+pysha3 = "*"
+cryptonote = {git = "https://github.com/ragerxlol/cryptonote-address-validator-py.git",editable = true}
+
+[requires]
+python_version = "3.6"
